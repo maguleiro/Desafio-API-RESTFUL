@@ -3,7 +3,19 @@ const multer = require('multer');
 const routeProductos = express.Router();
 
 //Base de datos
-const DB_PRODUCTOS = [];
+const DB_PRODUCTOS = [{
+    ID : 1,
+    Nombre : "Remera",
+    Precio : 3500,
+    Descuento : 5
+},
+{
+    ID : 2,
+    Nombre : "Campera",
+    Precio : 5000,
+    Descuento : 5
+}];
+
 
 //Midlewares
 const storage = multer.diskStorage({
